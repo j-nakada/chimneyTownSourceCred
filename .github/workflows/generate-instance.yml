@@ -51,7 +51,7 @@ jobs:
           yarn sourcecred site
           rm -rf ./site/{output,data,config,sourcecred.json}
           cp -r ./{output,data,config,sourcecred.json,package.json,yarn.lock} ./site/
-          sed -e 's/<title>SourceCred<\/title>/<title>CTD SourceCred<\/title>/g' ./site/index.html
+          sed -i -e 's/<title>SourceCred<\/title>/<title>CTD SourceCred<\/title>/g' ./site/index.html
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
