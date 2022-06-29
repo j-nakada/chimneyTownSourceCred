@@ -55,7 +55,7 @@ jobs:
           sed -i -e 's/<\/head>/<script src="https:\/\/nakada-files.s3.ap-northeast-1.amazonaws.com\/ChimneyDao\/sourceCredJS\/sourceCredUpdateName.js"><\/script><\/head>/g' ./site/index.html
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
